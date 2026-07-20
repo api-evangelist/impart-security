@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/impart-security/terraform-provider-impart (README + internal/apiclient), https://console.impartsecurity.net/
+api: Impart Security v0 REST API
+base_url: https://api.impartsecurity.net/v0
+summary:
+  types: [http-bearer]
+  api_key_in: [header]
+  model: >-
+    The Impart v0 REST API is authenticated with a scoped API access token
+    ("IMPART_TOKEN") issued from the Impart console under Settings => Access Tokens
+    => New API access token. Tokens are presented as a bearer credential and carry
+    read:/write: scopes granted per resource. The console web app itself is fronted
+    by an Auth0 OIDC tenant (auth.impartsecurity.net) for interactive human login.
+schemes:
+- name: apiAccessToken
+  type: http
+  scheme: bearer
+  description: >-
+    Scoped API access token issued from the Impart console. Set as the IMPART_TOKEN
+    environment variable (or a `token` argument) for the Terraform/Pulumi providers.
+  issued_at: https://console.impartsecurity.net/ (Settings => Access Tokens)
+  scope_model: >-
+    Tokens are granted explicit scopes. read:org_api_access_tokens is required for
+    the IaC providers to enumerate tokens; additional read:/write: scopes are granted
+    per managed resource (specs, bindings, rules, lists, monitors, etc.).
+  confirmed_scopes:
+  - read:org_api_access_tokens
+console_identity:
+  provider: auth0
+  issuer: https://auth.impartsecurity.net/
+  authorization_endpoint: https://auth.impartsecurity.net/authorize
+  token_endpoint: https://auth.impartsecurity.net/oauth/token
+  grant_types: [authorization_code, client_credentials, refresh_token, urn:ietf:params:oauth:grant-type:token-exchange]
+  note: OIDC tenant for interactive console/docs login; distinct from the API access-token auth used by the REST API.
+docs: https://docs.impartsecurity.net/
