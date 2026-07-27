@@ -1,0 +1,30 @@
+# Impart Security
+
+> Impart Security is a runtime security platform that unifies WAF, API security, and AI/LLM/agent/MCP protection on one inline enforcement engine. It analyzes the full request/response flow, models API behavior with machine learning, detects anomalies from a learned baseline, and takes inline mitigation actions (alert, block, behavioral rate limiting, deception, tarpits) before requests reach backend systems. Programmable rules are managed as code via first-party Terraform and Pulumi providers against the Impart v0 REST API. SOC 2 Type II certified and GDPR ready.
+
+## APIs
+
+- [Impart Security v0 REST API](https://docs.impartsecurity.net/): Manage specs, API/log bindings, connectors, core rules, rule scripts and recipes, lists, labels, tags, event monitors, and notification templates. Base URL https://api.impartsecurity.net/v0. Bearer API access token.
+
+## Docs
+
+- [Developer Documentation](https://docs.impartsecurity.net/): API reference and quickstarts (console-authenticated).
+- [Console / Developer Portal](https://console.impartsecurity.net/): Manage settings, access tokens, integrations.
+- [Kong Plugin Docs](https://developer.konghq.com/plugins/impart/): Impart plugin for Kong Gateway.
+- [Authentication](authentication/impart-security-authentication.yml): Scoped bearer API access token model.
+
+## Packages
+
+- [Terraform Provider](https://registry.terraform.io/providers/impart-security/impart/latest): Manage Impart resources as code.
+- [Pulumi Provider (npm)](https://www.npmjs.com/package/@impart-security/pulumi-impart): Node.js/TypeScript.
+- [Pulumi Provider (PyPI)](https://pypi.org/project/pulumi-impart/): Python.
+- [Kong Plugin (LuaRocks)](https://luarocks.org/modules/impart-security/kong-plugin-impart): kong-plugin-impart.
+- [GitHub Organization](https://github.com/impart-security): Terraform/Pulumi providers, Helm charts, Heroku buildpack, AWS log forwarders, spec-update GitHub Action.
+
+## Company
+
+- [Product](https://www.impart.ai/product): Complete runtime protection.
+- [About](https://www.impart.ai/about): Founders and investors.
+- [Resource Center / Blog](https://www.impart.ai/resource-center): Articles and product updates.
+- [Privacy Policy](https://www.impart.ai/legal/privacy-policy)
+- [Request a Demo](https://www.impart.ai/demo)

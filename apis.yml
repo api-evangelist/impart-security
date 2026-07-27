@@ -1,27 +1,115 @@
 aid: impart-security
 name: Impart Security
-description: 'Impart Security is a company surfaced as a portfolio company of crv and added to the API
-  Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Impart Security is a runtime security platform that unifies WAF, API
+  security, and AI/LLM/agent/MCP protection on one inline enforcement engine. It analyzes
+  the full request/response flow — headers, parameters, query strings, and bodies —
+  models API behavior with machine learning, detects anomalies from a learned baseline,
+  and takes inline mitigation actions (alert, block, behavioral rate limiting, deception,
+  tarpits) before requests reach backend systems. Impart also auto-generates OpenAPI
+  documentation from live traffic, integrates with gateways such as Kong, and ships
+  a programmable rules engine managed as code via first-party Terraform and Pulumi
+  providers against its v0 REST API. Founded by Jonathan DiVincenzo, Marc Harrison,
+  and Brian Joe; backed by Madrona, CRV, 8-bit Capital, and Haystack. SOC 2 Type II
+  certified and GDPR ready.'
 url: https://raw.githubusercontent.com/api-evangelist/impart-security/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - crv
+- madrona
+- 8-bit-capital
+- haystack
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Security
-apis: []
+- API Security
+- Runtime Protection
+- WAF
+- LLM Security
+- AI Security
+- MCP
+- Agent Security
+- Kong
+- Governance
+image: https://cdn.prod.website-files.com/69c2a371d79849d9c09b537d/6a086ac25135439db8499dee_64b88db668b71259bd9720385d8dde1e_Impart%20Open%20Graph.png
+apis:
+- name: Impart Security v0 REST API
+  description: 'Impart Security''s v0 REST management API — programmatically manage
+    specs, API/log bindings, connectors, core rules, rule scripts and recipes, lists,
+    labels, tags, event monitors, and notification templates. Authenticated with a
+    scoped API access token issued from the Impart console. This is the API the first-party
+    Terraform and Pulumi providers wrap. Reference documentation is behind console
+    authentication.'
+  humanURL: https://docs.impartsecurity.net/
+  baseURL: https://api.impartsecurity.net/v0
+  tags:
+  - API Security
+  - Runtime Protection
+  - Rules
+  properties:
+  - type: Authentication
+    url: authentication/impart-security-authentication.yml
+  - type: Documentation
+    url: https://docs.impartsecurity.net/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+- FN: Impart Security Support
+  email: support@impart.security
 common:
 - type: Website
   url: https://www.impart.ai/
+- type: DeveloperPortal
+  url: https://console.impartsecurity.net/
+- type: Documentation
+  url: https://docs.impartsecurity.net/
+- type: Blog
+  url: https://www.impart.ai/resource-center
+- type: GitHubOrganization
+  url: https://github.com/impart-security
+- type: SignUp
+  url: https://www.impart.ai/demo
+- type: Support
+  url: mailto:support@impart.security
+- type: PrivacyPolicy
+  url: https://www.impart.ai/legal/privacy-policy
+- type: Compliance
+  url: https://www.impart.ai/
+- type: Packages
+  url: packages/impart-security-packages.yml
+- type: SDKs
+  url: packages/impart-security-packages.yml
+- type: Authentication
+  url: authentication/impart-security-authentication.yml
+- type: Conformance
+  url: conformance/impart-security-conformance.yml
+- type: WellKnown
+  url: well-known/impart-security-well-known.yml
+- type: DomainSecurity
+  url: security/impart-security-domain-security.yml
+- type: LLMsTxt
+  url: llms/impart-security-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

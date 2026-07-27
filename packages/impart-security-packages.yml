@@ -1,0 +1,81 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/impart-security
+note: >-
+  Impart ships infrastructure-as-code providers and gateway/platform integrations
+  rather than conventional language SDKs. The Terraform and Pulumi providers are
+  first-party client libraries for the Impart v0 REST API; the Kong plugin, Heroku
+  buildpack, and Helm charts are first-party deployment integrations.
+packages:
+- language: hcl
+  registry: terraform
+  name: impart-security/impart
+  url: https://registry.terraform.io/providers/impart-security/impart/latest
+  install: 'terraform { required_providers { impart = { source = "impart-security/impart" } } }'
+  official: true
+  repo: https://github.com/impart-security/terraform-provider-impart
+  description: Terraform provider to manage Impart resources (specs, bindings, rules, lists, monitors) via the v0 REST API.
+- language: typescript
+  registry: npm
+  name: "@impart-security/pulumi-impart"
+  url: https://www.npmjs.com/package/@impart-security/pulumi-impart
+  install: npm install @impart-security/pulumi-impart
+  official: true
+  repo: https://github.com/impart-security/pulumi-impart
+  description: Pulumi resource provider (Node.js/TypeScript) for managing Impart resources.
+- language: python
+  registry: pypi
+  name: pulumi-impart
+  url: https://pypi.org/project/pulumi-impart/
+  install: pip install pulumi-impart
+  official: true
+  repo: https://github.com/impart-security/pulumi-impart
+  description: Pulumi resource provider (Python) for managing Impart resources.
+- language: go
+  registry: pkg.go.dev
+  name: github.com/impart-security/pulumi-impart/sdk/go/impart
+  url: https://pkg.go.dev/github.com/impart-security/pulumi-impart
+  install: go get github.com/impart-security/pulumi-impart/sdk/go/impart
+  official: true
+  repo: https://github.com/impart-security/pulumi-impart
+  description: Pulumi resource provider (Go) for managing Impart resources.
+- language: lua
+  registry: luarocks
+  name: kong-plugin-impart
+  url: https://luarocks.org/modules/impart-security/kong-plugin-impart
+  install: luarocks install kong-plugin-impart
+  official: true
+  repo: https://developer.konghq.com/plugins/impart/
+  description: Kong Gateway plugin that inspects HTTP traffic through Impart for real-time API protection and discovery.
+- language: yaml
+  registry: github
+  name: impart-security/spec-update-action
+  url: https://github.com/impart-security/spec-update-action
+  install: uses:\ impart-security/spec-update-action
+  official: true
+  repo: https://github.com/impart-security/spec-update-action
+  description: GitHub Action to update an API specification for a given organization in Impart.
+- language: yaml
+  registry: helm
+  name: impart-helm
+  url: https://github.com/impart-security/impart-helm
+  install: helm install (see repo)
+  official: true
+  repo: https://github.com/impart-security/impart-helm
+  description: Impart Security's Helm charts for deploying the Impart inspector.
+- language: shell
+  registry: github
+  name: heroku-buildpack-impart-inspector
+  url: https://github.com/impart-security/heroku-buildpack-impart-inspector
+  install: heroku buildpacks:add (see repo)
+  official: true
+  repo: https://github.com/impart-security/heroku-buildpack-impart-inspector
+  description: Heroku buildpack that installs the Impart inspector for runtime protection.
+- language: javascript
+  registry: github
+  name: aws-log-forwarder
+  url: https://github.com/impart-security/aws-log-forwarder
+  install: deploy AWS Lambda (see repo)
+  official: true
+  repo: https://github.com/impart-security/aws-log-forwarder
+  description: AWS Lambda function for forwarding logs to Impart.
