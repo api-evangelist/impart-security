@@ -64,6 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Impart Security is a company surfaced as a portfolio company of crv and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.
+Impart Security is a runtime security platform that unifies WAF, API security, and AI/LLM/agent/MCP protection on one inline enforcement engine. It analyzes the full request/response flow — headers, parameters, query strings, and bodies — models API behavior with machine learning, detects anomalies from a learned baseline, and takes inline mitigation actions (alert, block, behavioral rate limiting, deception, tarpits) before requests reach backend systems. Impart also auto-generates OpenAPI documentation from live traffic, integrates with gateways such as Kong, and ships a programmable rules engine managed as code via first-party Terraform and Pulumi providers against its v0 REST API. Founded by Jonathan DiVincenzo, Marc Harrison, and Brian Joe; backed by Madrona, CRV, 8-bit Capital, and Haystack. SOC 2 Type II certified and GDPR ready.
 
-Backed by: crv — https://www.impart.ai/
+**Areas:** Company · Security · API Security · Runtime Protection · WAF · LLM Security · AI Security · MCP · Agent Security · Kong · Governance
+
+## Impart Security on APIs.io
+
+Everything profiled for Impart Security is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/impart-security/](https://apis.io/providers/impart-security/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Impart Security v0 REST API](https://apis.io/apis/impart-security/impart-security-v0-rest-api/) — Impart Security's v0 REST management API — programmatically manage specs, API/log bindings, connectors, core rules, rule scripts and recipes, lists, labels,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Impart Security Authentication](https://apis.io/security/impart-security/impart-security-authentication/)
+- [Impart Security Domain Security](https://apis.io/security/impart-security/impart-security-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.impart.ai/)
+- [Documentation](https://docs.impartsecurity.net/)
+- [Sign up](https://www.impart.ai/demo)
+- [Blog](https://www.impart.ai/resource-center)
+- [Compliance](https://www.impart.ai/)
+- [Privacy policy](https://www.impart.ai/legal/privacy-policy)
+- [GitHub](https://github.com/impart-security)
+
+## API Evangelist rating
+
+**Kin Score 23.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 31.0 |
+| Access clarity | 31.6 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/impart-security/](https://apis.io/providers/impart-security/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Impart Security: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/impart-security/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
